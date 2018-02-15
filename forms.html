@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	<style type="text/css">
+	.navbar{
+		background-color: #00ccff;
+		border-collapse: 0;
+		font-size: 15px;
+		line-height: 1.4284;
+		letter-spacing: 4px;
+		border-radius: 0;
+	}
+	
+	.navbar-default .navbar-nav	> li> a
+	{
+      color: #000000;
+	}
+	.navbar-default .navbar-nav	> li.active> a
+	{
+      color: #ff0000;
+	}
+	.navbar-default .navbar-nav	> li> a:hover
+	{
+      color: #ffffff;
+	}
+
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Opichat</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="picwebsite.html">News</a></li>
+					<li><a href="noel.html">Friends</a></li>
+					<li><a href="lesson.html">Settings</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="row">
+		<div class="col-sm-6 col-sm-offset-3">
+			<h2 class="text-center">Register Here</h2>
+			<form>
+				<div class="form-group">Name:<br><input type="text" class="form-control" name="Name" placeholder="Enter Name"></div>
+				<div class="form-group">Date of Birth:<br><input type="date" class="form-control" name="Date of birth" placeholder="DOB"></div>
+				<div class="form-group">Emai address:<br><input type="text" class="form-control" name="Email" placeholder="Enter email"></div>
+				<div class="form-group">Password:<br><input type="password" class="form-control" name="password" placeholder="Enter password"></div>
+				<div class="form-group">Confirm password:<br><input type="password" class="form-control" name="Confirm password" placeholder="Confirm password"></div>
+				<div class="form-group">
+					<select class="form-control">
+						<option>Primary school</option>
+						<option>Secondary Schol</option>
+						<option>College</option>
+						<option>Polytechnic</option>
+						<option>University</option>
+					</select>
+				</div>
+				<button class="btn btn-success">Sign Up</button>
+			</form>
+
+		</div>
+	</div>
+
+</body>
+</html>
